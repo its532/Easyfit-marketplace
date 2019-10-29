@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import "./App.css";
 import gym from "../anytime.png";
 import gym2 from "../gold.jpg";
+import gym3 from "../joyfit.png";
+import gym4 from "../konami.jpg";
+import gym5 from "../fastgym.png";
 
 class Main extends Component {
   constructor(props) {
@@ -84,8 +87,8 @@ class Main extends Component {
                 <option value="Anytime Fitness">Anytime Fitness </option>
                 <option value="Gold gym">Gold gym</option>
                 <option value="JoyFit">JoyFit</option>
-                <option value="サンプル4">選択肢のサンプル4</option>
-                <option value="サンプル5">選択肢のサンプル5</option>
+                <option value="Konami">Konami</option>
+                <option value="Fastgym">Fastgym</option>
               </select>
             </p>
             {/* <input
@@ -117,8 +120,8 @@ class Main extends Component {
               }}
               className="form-control"
             >
-              <option value="Anytime Fitness">January </option>
-              <option value="Gold gym">February</option>
+              <option value="January">January </option>
+              <option value="February">February</option>
               <option value="March">March</option>
               <option value="April">April</option>
               <option value="May">May</option>
@@ -170,6 +173,15 @@ class Main extends Component {
               }
               if (product.name === "Gold gym") {
                 preview = <img src={gym2} width="50px" />;
+              }
+              if (product.name === "JoyFit") {
+                preview = <img src={gym3} width="40px" />;
+              }
+              if (product.name === "Konami") {
+                preview = <img src={gym4} width="70px" />;
+              }
+              if (product.name === "Fastgym") {
+                preview = <img src={gym5} width="60px" />;
               }
               // });
 
