@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Web3 from "web3";
-// import logo from '../logo.png';
-
 import Marketplace from "../abis/Marketplace.json";
 import Navbar from "./Navbar";
 import Main from "./Main";

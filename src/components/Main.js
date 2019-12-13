@@ -15,50 +15,11 @@ class Main extends Component {
     };
   }
 
-  //   captureFile = event => {
-  //     event.preventDefault();
-  //     // console.log(event.target.files[0])
-
-  //     this.setState({
-  //       imageData: event.target.files[0]
-  //     });
-  //     console.log(this.state.imageData);
-  //   };
-
   render() {
     var today = new Date();
     const i = today.getMonth() + 1;
     console.log(today.getFullYear() + "/" + i + "/" + today.getDate());
     console.log(today.getMonth() + 1);
-    // if (name === "Anytime Fitness") {
-    //     preview = (
-    //         <div>
-    //             <img src={this.state.imageData} width="60px" />
-    //         </div>
-    //     )
-    // }
-    // const i = this.props.products
-    // const imageData = this.state.imageData
-    // let preview = "";
-    // console.log(i.name)
-    // if (i.name = 'Anytime Fitness') {
-
-    //     preview = (
-    //         <div>
-    //             <img src={gym} width="60px" />
-    //         </div>
-    //     )
-
-    // }
-    // if (i.name = 'Gold gym') {
-
-    //     preview = (
-    //         <div>
-    //             <img src={gym2} width="60px" />
-    //         </div>
-    //     )
-
-    // }
 
     return (
       <div id="content">
@@ -91,13 +52,6 @@ class Main extends Component {
                 <option value="Fastgym">Fastgym</option>
               </select>
             </p>
-            {/* <input
-                            id="productName"
-                            type="text"
-                            ref={(input) => { this.productName = input }}
-                            className="form-control"
-                            placeholder="Product Name"
-                            required /> */}
           </div>
           <div className="form-group mr-sm-2">
             <input
@@ -134,7 +88,6 @@ class Main extends Component {
               <option value="December">December</option>
             </select>
           </div>
-          {/* <input type='file' onChange={this.captureFile}></input> */}
           <button type="submit" className="btn btn-primary">
             Add Product
           </button>
@@ -142,10 +95,6 @@ class Main extends Component {
 
         <p>&nbsp;</p>
         <h2>Buy ownership</h2>
-        {/* {preview}
-                <img src={gym2} alt="" width="60px"
-                    ref={img => { this.imgi = img }} ></img>
-                <img src={this.state.imageData} alt="" width="70px" /> */}
 
         <table className="table">
           <thead>
@@ -188,7 +137,6 @@ class Main extends Component {
               return (
                 <tr key={key}>
                   <th scope="row">{preview}</th>
-                  {/* {product.id.toString()} */}
 
                   <td>{product.name} </td>
 

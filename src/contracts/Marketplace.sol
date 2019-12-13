@@ -34,7 +34,7 @@ event ProductPurchased(
 
     constructor() public {
         name = "Dapp Univercity";
-        // timestamp = block.timestamp;
+        
     }
 
  function createProduct(string memory _name, uint _price, string memory _day) public {
